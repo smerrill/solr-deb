@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/etc/init.d/solr stop
+/usr/bin/pgrep -usolr java > /dev/null && /etc/init.d/solr stop || /bin/true
